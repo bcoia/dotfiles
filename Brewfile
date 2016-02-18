@@ -11,6 +11,7 @@ brew 'unrar'
 brew 'the_silver_searcher'
 brew 'wget'
 brew 'youtube-dl'
+brew 'zsh-history-substring-search'
 brew 'zsh-syntax-highlighting'
 
 cask '1password'
