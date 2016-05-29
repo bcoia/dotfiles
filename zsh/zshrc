@@ -4,10 +4,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 DEFAULT_USER="bcoia"
-#plugins=(autojump git osx zsh-256color zsh-autosuggestions)
 
 export TERM="xterm-256color"
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:$HOME/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:$HOME/bin:$HOME/.rvm/bin"
 export SUBLIME=subl
 export EDITOR="$SUBLIME --wait"
 export VISUAL=$EDITOR
@@ -19,3 +18,7 @@ bindkey '[D' backward-word
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
+ZSH_AUTOSUGGEST_STRATEGY='match_prev_cmd'
+
+alias start_pg='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias stop_pg='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
