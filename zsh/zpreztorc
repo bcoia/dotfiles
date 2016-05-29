@@ -13,6 +13,7 @@ zstyle ':prezto:load' pmodule \
   'utility' \
   'completion' \
   'prompt' \
+  'ssh' \
   'git' \
   'osx' \
   'homebrew' \
@@ -30,7 +31,7 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 zstyle ':prezto:module:prompt' theme 'agnoster'
 
 # Set the SSH identities to load into the agent.
-# zstyle ':prezto:module:ssh:load' identities 'id_rsa' 'id_rsa2' 'id_github'
+zstyle ':prezto:module:ssh:load' identities 'id_rsa' 'github_rsa'
 
 # Set syntax highlighters.
 # By default, only the main highlighter is enabled.
