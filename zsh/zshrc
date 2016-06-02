@@ -22,3 +22,4 @@ ZSH_AUTOSUGGEST_STRATEGY='match_prev_cmd'
 
 alias start_pg='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias stop_pg='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+alias flushdns='sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;echo flushed'
