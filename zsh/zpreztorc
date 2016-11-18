@@ -17,10 +17,7 @@ zstyle ':prezto:load' pmodule \
   'git' \
   'osx' \
   'homebrew' \
-  'python' \
-  'syntax-highlighting' \
-  'autosuggestions' \
-  'history-substring-search'
+  'python'
 
 # Set the editor key mapping style to 'emacs' or 'vi'.
 zstyle ':prezto:module:editor' key-bindings 'emacs'
@@ -64,4 +61,4 @@ zstyle ':prezto:module:terminal:tab-title' format '%m: %s'
 # zstyle ':prezto:module:tmux:auto-start' remote 'yes'
 
 # Integrate with iTerm2.
-# zstyle ':prezto:module:tmux:iterm' integrate 'yes'
+zstyle ':prezto:module:tmux:iterm' integrate 'yes'
