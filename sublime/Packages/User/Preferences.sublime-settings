@@ -3,13 +3,14 @@
 	"color_scheme": "Packages/User/SublimeLinter/Material Spacegray (SL).tmTheme",
 	"enable_telemetry": false,
 	"font_face": "Hack",
-	"font_size": 13,
+	"font_size": 12,
 	"ignored_packages":
 	[
-		"Color Highlighter",
-		"Phpcs",
 		"Vintage"
 	],
+	"line_padding_bottom": 1,
+	"material_theme_compact_panel": true,
+	"material_theme_compact_sidebar": true,
 	"material_theme_small_statusbar": true,
 	"material_theme_small_tab": true,
 	"rulers":
