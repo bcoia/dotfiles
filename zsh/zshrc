@@ -12,15 +12,19 @@ export SUBLIME=subl
 export EDITOR="$SUBLIME --wait"
 export VISUAL=$EDITOR
 
-bindkey -e
-bindkey '[C' forward-word
-bindkey '[D' backward-word
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+bindkey -e
+bindkey '[C' forward-word
+bindkey '[D' backward-word
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+bindkey '\eOA' history-substring-search-up # or ^[OA
+bindkey '\eOB' history-substring-search-down # or ^[OB
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
