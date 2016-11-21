@@ -4,6 +4,7 @@ tap 'caskroom/cask'
 tap 'caskroom/fonts'
 tap 'homebrew/bundle'
 
+brew 'heroku-toolbelt'
 brew 'hugo'
 brew 'go'
 brew 'keybase'
